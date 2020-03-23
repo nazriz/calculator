@@ -16,20 +16,32 @@ line-height: 50px; /* adjust based on div size*/
     outline: solid black 1px;
     grid-column-start: 1;
     grid-column-end: -1;
+    overflow: hidden; /* Prevents numbers from going outside border */
+    white-space: nowrap;
+}
+
+.calcBtn {
+    outline: solid black 1px;
+    cursor: pointer;
+    padding-top: 3px;
+}
+
+.calcBtn:hover {
+    background-color: aqua;
+
 }
 
 .numBtn {
-    outline: solid black 1px;
+
     
 }
 
 .opBtn {
-    outline: solid black 1px;
 
 }
 
 .zeroBtn {
-    outline: solid black 1px;
     grid-column-start: 1;
     grid-column-end: 3;
 }
+

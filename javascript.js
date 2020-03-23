@@ -48,4 +48,21 @@ operate = (operator,num1,num2) => {
 }
 
 
-operate("*",3,6)
+// Button Variables
+
+let oneBtn = document. 
+
+// display functions
+
+let display = document.getElementById('display');
+let displayedContent = document.createTextNode("0");
+display.appendChild(displayedContent);
+
+let seven = document.getElementById('seven');
+
+// Event listeners
+
+document.getElementById("seven").addEventListener("click", )
+
+
+
