@@ -27,20 +27,45 @@ divide = (num1,num2) => {
 
 // operate function
 
-operate = (operator,num1,num2) => {
+
+
+let operate = (clickObj) => {
+    let operator = clickObj.target.innerText;
     switch(operator) {
         case "+":
-            add(num1,num2);
+        pendingValue = displayValue;
+        displayValue = "0";
+        display.innerText.displayValue;
+        evalStringArray.push(pendingVal);
+        evalStringArray.push("+")
             break;
         case "-":
-            subtract(num1,num2);
+            pendingValue = displayValue;
+            displayValue = "0";
+            display.innerText.displayValue;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push("-")
             break;
-        case "*":
-            multiply(num1,num2);
+        case "x":
+            pendingValue = displayValue;
+            displayValue = "0";
+            display.innerText.displayValue;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push("*")
             break;
-        case "/":
-            divide(num1,num2);
+        case "÷":
+            pendingValue = displayValue;
+            displayValue = "0";
+            display.innerText.displayValue;
+            evalStringArray.push(pendingVal);
+            evalStringArray.push("/")
             break;
+        case "=":
+            evalStringArray.push(displayValue);
+            let evaluate = eval(evalStringArray.join(" "));
+            displayValue = evaluate + "";
+            display.innerText = displayValue;
+            evalStringArray = [];
         default:
             console.log("test");
     }
