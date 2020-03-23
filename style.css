@@ -1,0 +1,35 @@
+#calcContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    width: 400px;
+    height: 400px;
+}
+
+#calcContainer div {
+text-align: center;
+vertical-align: middle;
+line-height: 50px; /* adjust based on div size*/
+}
+
+.display {
+    outline: solid black 1px;
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.numBtn {
+    outline: solid black 1px;
+    
+}
+
+.opBtn {
+    outline: solid black 1px;
+
+}
+
+.zeroBtn {
+    outline: solid black 1px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
