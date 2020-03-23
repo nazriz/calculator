@@ -29,35 +29,36 @@ divide = (num1,num2) => {
 
 
 
-let operate = (clickObj) => {
+let operateDisplayValues = (clickObj) => {
     let operator = clickObj.target.innerText;
+
     switch(operator) {
         case "+":
         pendingValue = displayValue;
         displayValue = "0";
-        display.innerText.displayValue;
-        evalStringArray.push(pendingVal);
+        display.innerText = displayValue;
+        evalStringArray.push(pendingValue);
         evalStringArray.push("+")
             break;
         case "-":
             pendingValue = displayValue;
             displayValue = "0";
-            display.innerText.displayValue;
-            evalStringArray.push(pendingVal);
+            display.innerText = displayValue;
+            evalStringArray.push(pendingValue);
             evalStringArray.push("-")
             break;
         case "x":
             pendingValue = displayValue;
             displayValue = "0";
-            display.innerText.displayValue;
-            evalStringArray.push(pendingVal);
+            display.innerText = displayValue;
+            evalStringArray.push(pendingValue);
             evalStringArray.push("*")
             break;
         case "÷":
             pendingValue = displayValue;
             displayValue = "0";
-            display.innerText.displayValue;
-            evalStringArray.push(pendingVal);
+            display.innerText = displayValue;
+            evalStringArray.push(pendingValue);
             evalStringArray.push("/")
             break;
         case "=":
@@ -67,7 +68,7 @@ let operate = (clickObj) => {
             display.innerText = displayValue;
             evalStringArray = [];
         default:
-            console.log("test");
+            break;
     }
     
 }
@@ -119,9 +120,9 @@ for (let i = 0; i < numBtn.length; i++) {
     numBtn[i].addEventListener('click', displayUpdate, false);
 }
 
-// for (let i = 0; i < opBtn.length; i++) {
-//     opBtn[i].addEventListener('click', initiateOperator, false);
-// }
+for (let i = 0; i < opBtn.length; i++) {
+    opBtn[i].addEventListener('click', operateDisplayValues, false);
+}
 
 
 allClearBtn.onclick = () => {
