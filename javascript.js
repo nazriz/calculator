@@ -97,7 +97,7 @@ let display = document.getElementById('display');
 let numBtn = document.getElementsByClassName("numBtn");
 let opBtn = document.getElementsByClassName("opBtn");
 
-let displayValue = "0"
+let displayValue = "0";
 let pendingValue;
 let evalStringArray = [];
 
