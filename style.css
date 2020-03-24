@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto', sans-serif;;
+}
+
 #calcContainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -33,15 +37,25 @@ line-height: 50px; /* adjust based on div size*/
 
 .numBtn {
 
-    
+    background-color: #CAC8C8; 
 }
 
 .opBtn {
+    background-color: #A986E5;
 
 }
 
-.zeroBtn {
+.zeroBtn  {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #CAC8C8; 
+}
+
+#allClear {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
+#period {
+    background-color: #CAC8C8; 
+}
